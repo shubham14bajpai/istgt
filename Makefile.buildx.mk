@@ -17,7 +17,7 @@
 # By default the organization name is `openebs`. 
 
 ifeq (${IMAGE_ORG}, )
-  IMAGE_ORG = openebs
+  IMAGE_ORG = shubham1494
   export IMAGE_ORG
 endif
 
@@ -52,7 +52,8 @@ endif
 
 # default list of platforms for which multiarch image is built
 ifeq (${PLATFORMS}, )
-	export PLATFORMS="linux/amd64,linux/arm64,linux/ppc64le"
+	export PLATFORMS="linux/amd64,linux/arm64"
+	#linux/ppc64le"
 endif
 
 # if IMG_RESULT is unspecified, by default the image will be pushed to registry
